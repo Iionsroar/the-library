@@ -16,4 +16,4 @@ mobile app for saving everything! from everywhere! all at once!
 
 ### Home Screen
 
-<img src="C:\Users\halloween\Documents\_CS PROJECTS\the-library\assets\images\home-screen.jpg" style="zoom: 25%;" />
+<img src="\assets\images\home-screen.jpg" style="zoom: 25%;" />
