@@ -1,6 +1,6 @@
 # The Library
 
-mobile app for saving everything! from everywhere! all at once!
+🚧 mobile app for saving everything! from everywhere! all at once!
 
 
 
@@ -14,6 +14,14 @@ mobile app for saving everything! from everywhere! all at once!
 
 
 
+### References
+
+1. [Environment Setup](https://reactnative.dev/docs/environment-setup)
+2. [Project-Based Tutorial](https://docs.expo.dev/tutorial/introduction/)
+2. [Cliboard Expo SDK Library](https://docs.expo.dev/versions/v47.0.0/sdk/clipboard/)
+
+
+
 ### Home Screen
 
-<img src="assets\images\home-screen.jpg" />
+<img src="assets\images\home-screen.jpg" width=50% height=50%/>

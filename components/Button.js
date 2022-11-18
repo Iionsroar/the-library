@@ -1,7 +1,17 @@
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import * as Clipboard from 'expo-clipboard';
+import * as React from 'react';
 
 export default function Button({ label, theme }) {
+  const [copiedText, setCopiedText] = React.useState('');
+  
+  const fetchCopiedText = async () => {
+    const text = await Clipboard.getStringAsync();
+    setCopiedText(text);
+    alert(`Your latest clip is: ${copiedText}`)
+  };
+  
   if (theme === "primary") {
     return (
       <View
@@ -9,10 +19,10 @@ export default function Button({ label, theme }) {
       >
         <Pressable
           style={[styles.button, { backgroundColor: "#fff" }]}
-          onPress={() => alert('You pressed a button.')}
+          onPress={fetchCopiedText}
         >
           <FontAwesome
-            name="picture-o"
+            name="clipboard"
             size={18}
             color="#25292e"
             style={styles.buttonIcon}
@@ -25,7 +35,7 @@ export default function Button({ label, theme }) {
   
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+      <Pressable style={styles.button} onPress={() => alert('<Open clipboard modal here>')}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
